@@ -1,0 +1,6 @@
+docker run -d --rm -it --name looper ubuntu sh -c 'while true; do echo "Input website:"; read website; echo "Searching.."; sleep 1; curl http://$website; done'
+docker container exec looper apt-get update
+docker container exec looper apt-get -y install curl
+docker container attach looper
+
+helsinki.fi
