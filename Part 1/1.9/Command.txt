@@ -1,0 +1,3 @@
+mkdir p19
+touch p19/text.log 
+docker run -v "$(pwd)/p19/text.log:/usr/src/app/text.log" devopsdockeruh/simple-web-service

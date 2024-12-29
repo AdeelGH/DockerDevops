@@ -1,0 +1,4 @@
+docker build .
+docker run -p 127.0.0.1:3456:8080 devopsdockeruh/simple-web-service:alpine server
+
+Then open http://127.0.0.1:3456/ on browser. 
